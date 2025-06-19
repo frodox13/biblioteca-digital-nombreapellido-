@@ -37,7 +37,9 @@ Pueden clonar el repositorio desde
 ├── 📄 requirements.txt
 ├── 📄 README.md
 └── 📄 .gitignore
-________________________________________
+
+
+
 Entregables en GitHub:
 1.	Código fuente completo y funcional.
 2.	Diagrama de clases UML en /docs.
