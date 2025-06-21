@@ -1,50 +1,46 @@
-# biblioteca-digital-nombreapellido-
-Tarea Integradora: Desarrollar una aplicación en Python utilizando el paradigma de programación orientada a objetos, que permita gestionar una biblioteca digital con funcionalidades CRUD, consumo de APIs externas y almacenamiento seguro de datos en una base de datos. El proyecto debe ser entregado en un repositorio público de GitHub.
+# Biblioteca Digital
+
+Este proyecto es una **Biblioteca Digital** desarrollada en Python, que permite gestionar libros, usuarios y préstamos, además de buscar libros en la API pública de Google Books.
+
+## Descripción
+
+La aplicación permite:
+- Registrar, consultar, actualizar y eliminar libros y usuarios.
+- Crear y devolver préstamos de libros.
+- Consultar el listado de libros, usuarios y préstamos.
+- Buscar libros en Google Books y agregarlos a la base de datos local.
+- Todo el sistema utiliza una base de datos SQLite para persistencia.
+
+## Estructura del Proyecto
+
+```
+.
+├── main.py                # Archivo principal de la aplicación
+├── models.py              # Definición de modelos, sus atributos y metodos
+├── database.py            # Base de datos de la aplicación
+├── views.py               # Lógica de presentación y manejo de la interfaz de usuario
+├── controllers.py         # Controladores para la interacción entre modelos y vistas
+├── requirements.txt       # Dependencias del proyecto
+└── README.md              # Documentación del proyecto
+```
+
+## Instalación y Uso
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/tu_usuario/biblioteca_digital.git
+   ```
+2. Navegar al directorio del proyecto:
+   ```bash
+   cd biblioteca_digital
+   ```
+3. Instalar las dependencias:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Ejecutar la aplicación:
+   ```bash
+   python biblioteca.py
+   ```
 
 
-Requisitos del Proyecto:
-1. Diseño y Modelado (UML)
-•	Crear un diagrama de clases UML que represente las entidades principales del sistema: Libro, Prestamo, Usuario, etc.
-•	Incluir el diagrama en el repositorio (/docs/diagrama_clases.png o .pdf).
-2. Programación Orientada a Objetos
-•	Implementar las clases en Python aplicando:
-•	Herencia
-•	Encapsulamiento
-•	Polimorfismo
-•	Organizar el código en módulos y carpetas (/models, /controllers, etc.).
-3. Base de Datos
-•	Conectar la aplicación a una base de datos (SQLite).
-•	Usar librerías oficiales como sqlite3.
-•	Implementar operaciones CRUD para las entidades principales.
-4. Consumo de API Externa
-•	Integrar una API pública (ej. Google Books API) para buscar libros.
-•	Deserializar la respuesta en JSON.
-•	Permitir registrar libros obtenidos desde la API en la base de datos.
-5. Manejo de Errores
-•	Implementar manejo de excepciones para errores comunes.
-•	Mostrar mensajes claros al usuario.
-
-Estructura del Repositorio en GitHub:
-Pueden clonar el repositorio desde 
- biblioteca-digital/
-├── models/
-├── controllers/
-├── database/
-├── api/
-├── docs/
-│   └── diagrama_clases.png
-├── 📄 main.py
-├── 📄 requirements.txt
-├── 📄 README.md
-└── 📄 .gitignore
-
-
-
-Entregables en GitHub:
-1.	Código fuente completo y funcional.
-2.	Diagrama de clases UML en /docs.
-3.	Script SQL para crear la base de datos en /database.
-4.	Archivo README.md con:
-•	Descripción del proyecto
-•	Instrucciones de instalación y ejecución
-•	Librerías utilizadas
