@@ -28,7 +28,7 @@ La aplicación permite:
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/biblioteca_digital.git
+   git clone https://github.com/frodox13/biblioteca_digital.git
    ```
 2. Navegar al directorio del proyecto:
    ```bash
