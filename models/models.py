@@ -1,4 +1,3 @@
-import os
 from datetime import datetime
 from api.api import descargar_portada_google_books
 
